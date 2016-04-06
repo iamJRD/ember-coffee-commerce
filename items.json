@@ -1,0 +1,18 @@
+{ "items": [{
+    "brand": "Heart",
+    "name": "Peru",
+    "description": "Berries and Chocolate",
+    "purchaseQuantity": 0,
+    "price": 15,
+    "instock": "yes",
+    "image": "http://cdn.shopify.com/s/files/1/0261/3485/products/Peru_updated_grande.jpg?v=1456081707"
+  }, {
+    "brand": "Water Ave",
+    "name": "Brazilian",
+    "description": "Pomegranate",
+    "purchaseQuantity": 0,
+    "price": 21,
+    "instock": "yes",
+    "image": "http://cdn.shopify.com/s/files/1/0069/6252/products/brazil_pico_agudo_82e5a1ad-8d11-49b7-93cc-93165769c25f_1024x1024.png?v=1457046925"
+  }]
+}

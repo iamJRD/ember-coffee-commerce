@@ -1,1 +1,12 @@
 {{outlet}}
+
+<div class="row">
+  {{#each model as |item|}}
+    <div class="col-md-4">
+      {{item.brand}}
+      {{item.name}}
+      {{item.quantity}}
+      <img src={{item.image}} />
+    </div>
+  {{/each}}
+</div>
