@@ -1,1 +1,16 @@
-{{outlet}}
+<div class="text-center">
+  <h1>Welcome to the Admin Page!</h1>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h2>All Items:</h2>
+      {{#each model.items as |item|}}
+        {{admin-item-tile item=item}}
+      {{/each}}
+    </div>
+    <div class="col-md-6">
+      <h2>Add a New Item:</h2>
+      {{new-item item=item saveItem="saveItem"}}
+    </div>
+  </div>
+</div>
