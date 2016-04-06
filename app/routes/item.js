@@ -5,6 +5,14 @@ export default Ember.Route.extend({
     return this.store.findRecord('item', params.item_id);
   },
 
+  sortBy: 'rating',
+  sortedReviews: Ember.computed.sort('model.reviews', 'sortDefinition'),
+  reverseSort: false,
+  sortDefinition: Ember.computed('sortBy', 'reverseSort', function(){
+    let sortOrder = this.get('reverseSort') ? 'desc' : 'asc';
+    return [ `${this.get('sortBy')}:${sortOrder}` ];
+  }),
+
   actions: {
     saveReview(params) {
       var newReview = this.store.createRecord('review', params);

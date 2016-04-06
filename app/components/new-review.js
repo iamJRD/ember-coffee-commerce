@@ -17,6 +17,10 @@ export default Ember.Component.extend({
         item: this.get('item')
       };
       this.sendAction('saveReview', params);
+      this.set('username', '');
+      this.set('date', '');
+      this.set('rating', '');
+      this.set('body', '');
     }
   }
 });
