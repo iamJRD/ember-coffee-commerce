@@ -8,4 +8,5 @@ export default DS.Model.extend({
     purchaseQuantity: DS.attr(),
     price: DS.attr(),
     inStock: DS.attr(),
+    reviews: DS.hasMany('review', {async: true})
 });
