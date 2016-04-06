@@ -5,8 +5,10 @@
     <div class="col-md-6">
       <h2>All Items:</h2>
       {{#each model.items as |item|}}
-        {{admin-item-tile item=item editItem="editItem"}}
-        <button class="btn btn-danger" {{action 'destroyItem' item}}>Delete</button>
+        <div class="item-list">
+          {{admin-item-tile item=item editItem="editItem"}}
+          <button class="btn btn-danger" {{action 'destroyItem' item}}>Delete</button>
+        </div>
       {{/each}}
     </div>
     <div class="col-md-6">
