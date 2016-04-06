@@ -5,7 +5,7 @@
     <div class="col-md-6">
       <h2>All Items:</h2>
       {{#each model.items as |item|}}
-        {{admin-item-tile item=item}}
+        {{admin-item-tile item=item editItem="editItem"}}
       {{/each}}
     </div>
     <div class="col-md-6">
