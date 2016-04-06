@@ -1,12 +1,17 @@
 <div class="row">
   <div class="col-md-6">
     <img src={{model.image}} alt={{model.name}} />
+    <br>
+    <br>
+    {{new-review item=model review=review saveReview="saveReview"}}
   </div>
 
   <div class="col-md-6">
     {{item-tile item=model}}
-    {{review-tile item=model }}
+    <h3>Reviews for {{model.name}}:</h3>
+    <hr>
+    {{#each model.reviews as |review|}}
+      {{review-tile review=review}}
+    {{/each}}
   </div>
-
-  {{new-review item=model review=review saveReview="saveReview"}}
 </div>
