@@ -3,12 +3,12 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   shoppingCart: Ember.inject.service(),
   cartTotal: Ember.computed('shoppingCart.products', function() {
-      var total = 0;
-      for(var i = 0; i < this.get('shoppingCart.products.length'); i++) {
-        var price = this.get('shoppingCart.products')[i].get('price');
-        total += price;
-      }
-      return total;
+    var total = 0;
+    for(var i = 0; i < this.get('shoppingCart.products.length'); i++) {
+      var price = this.get('shoppingCart.products')[i].get('price');
+      total += price;
+    }
+    return total;
   })
 });
 
