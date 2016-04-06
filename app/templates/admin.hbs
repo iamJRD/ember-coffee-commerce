@@ -6,6 +6,7 @@
       <h2>All Items:</h2>
       {{#each model.items as |item|}}
         {{admin-item-tile item=item editItem="editItem"}}
+        <button class="btn btn-danger" {{action 'destroyItem' item}}>Delete</button>
       {{/each}}
     </div>
     <div class="col-md-6">
