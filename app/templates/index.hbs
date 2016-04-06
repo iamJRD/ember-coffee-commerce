@@ -1,12 +1,12 @@
-{{outlet}}
-
 <div class="row">
   {{#each model as |item|}}
     <div class="col-md-4">
       {{item.brand}}
-      {{item.name}}
+      {{#link-to 'item' item.id}}{{item.name}}{{/link-to}}
       {{item.quantity}}
-      <img src={{item.image}} />
+      {{#link-to 'item' item.id}}<img src={{item.image}} />{{/link-to}}
     </div>
   {{/each}}
 </div>
+
+{{display-cart}}
