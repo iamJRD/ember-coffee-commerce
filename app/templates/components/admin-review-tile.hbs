@@ -1,6 +1,13 @@
-<h4>Review for {{review.item.name}} by {{review.item.brand}}:</h4>
-<h3>{{review.username}}</h3>
-<h5>{{formatted-date review}}</h5>
-<h6>{{review.rating}}/5</h6>
-<p>{{review.body}}</p>
-{{edit-review review=review editReview="editReview"}}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Review for {{review.item.name}} by {{review.item.brand}}</h3>
+  </div>
+  <div class="panel-body">
+    <h3>{{review.username}}</h3>
+    <h5>{{formatted-date review}}</h5>
+    <h6>{{review.rating}}/5</h6>
+    <p>{{review.body}}</p>
+    {{edit-review review=review editReview="editReview"}}
+    {{destroy-review review=review destroyReview="destroyReview"}}
+  </div>
+</div>

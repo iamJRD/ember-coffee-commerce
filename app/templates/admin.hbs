@@ -17,8 +17,7 @@
       <h2>All Reviews:</h2>
       {{#each model.reviews as |review|}}
         <div class="review-list">
-          {{admin-review-tile review=review editReview="editReview"}}
-          <button {{action 'destroyReview' review}} class="btn btn-danger">Delete Review</button>
+          {{admin-review-tile review=review editReview="editReview" destroyReview="destroyReview"}}
         </div>
       {{/each}}
     </div>
