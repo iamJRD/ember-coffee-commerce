@@ -18,6 +18,11 @@ export default Ember.Component.extend({
       };
       this.sendAction('editItem', item, params);
       this.set('editItemForm', false);
+      this.set('name', '');
+      this.set('brand', '');
+      this.set('description', '');
+      this.set('image', '');
+      this.set('price', '');
     }
   }
 });

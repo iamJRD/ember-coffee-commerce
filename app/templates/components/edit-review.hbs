@@ -1,1 +1,22 @@
-{{yield}}
+{{#if editReviewForm}}
+  <form>
+    <div class="form-group">
+      <label for="username">Username: </label>
+      {{input type="text" value=username placeholder=review.username}}
+    </div>
+
+    <div class="form-group">
+      <label for="rating">Item Rating: </label>
+      {{input type="number" min=0 max=5 value=rating placeholder=review.rating}}
+    </div>
+
+    <div class="form-group">
+      <label for="body">Review Body: </label>
+      {{textarea rows="7" cols="40" value=body placeholder=review.body}}
+    </div>
+
+    <button {{action 'editReview' review}} class="btn btn-primary">Save Review</button>
+  </form>
+{{else}}
+  <button {{action 'editReviewForm'}} class="btn btn-primary">Edit Review</button>
+{{/if}}

@@ -14,7 +14,7 @@
       <h2>All Reviews:</h2>
       {{#each model.reviews as |review|}}
         <div class="review-list">
-          {{admin-review-tile review=review}}
+          {{admin-review-tile review=review editReview="editReview"}}
         </div>
       {{/each}}
 
