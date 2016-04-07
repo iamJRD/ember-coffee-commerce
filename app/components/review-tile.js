@@ -8,4 +8,5 @@ export default Ember.Component.extend({
     let sortOrder = this.get('reverseSort') ? 'desc' : 'asc';
     return [ `${this.get('sortBy')}:${sortOrder}` ];
   }),
+
 });
