@@ -1,5 +1,7 @@
 <div class="text-center">
   <h1>Welcome to the Admin Page!</h1>
+  <h2>Add a New Item:</h2>
+  {{new-item item=item saveItem="saveItem"}}
 
   <div class="row">
     <div class="col-md-6">
@@ -10,7 +12,8 @@
           <button class="btn btn-danger" {{action 'destroyItem' item}}>Delete Item</button>
         </div>
       {{/each}}
-
+    </div>
+    <div class="col-md-6">
       <h2>All Reviews:</h2>
       {{#each model.reviews as |review|}}
         <div class="review-list">
@@ -18,11 +21,6 @@
           <button {{action 'destroyReview' review}} class="btn btn-danger">Delete Review</button>
         </div>
       {{/each}}
-
-    </div>
-    <div class="col-md-6">
-      <h2>Add a New Item:</h2>
-      {{new-item item=item saveItem="saveItem"}}
     </div>
   </div>
 </div>

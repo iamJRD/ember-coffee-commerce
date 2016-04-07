@@ -1,3 +1,12 @@
+{{#ember-remodal
+  openButton='Add Item'
+  confirmButton='Save'
+  title='Add Item'
+  buttonClasses='btn'
+  openButtonClasses='btn-primary'
+  confirmButtonClasses='btn-success'
+  onClose=(action 'saveItem')
+}}
 <form>
   <div class="form-group">
     <label for="name">Item Name: </label>
@@ -29,5 +38,6 @@
     {{input type="number" min=0 value=quantity id="quantity"}}
   </div>
 
-  <button {{action 'saveItem'}} class="btn btn-success">Add Item</button>
+  <!-- <button {{action 'saveItem'}} class="btn btn-success">Add Item</button> -->
 </form>
+{{/ember-remodal}}
