@@ -10,6 +10,14 @@
           <button class="btn btn-danger" {{action 'destroyItem' item}}>Delete</button>
         </div>
       {{/each}}
+
+      <h2>All Reviews:</h2>
+      {{#each model.reviews as |review|}}
+        <div class="review-list">
+          {{admin-review-tile review=review}}
+        </div>
+      {{/each}}
+
     </div>
     <div class="col-md-6">
       <h2>Add a New Item:</h2>
