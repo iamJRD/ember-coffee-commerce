@@ -38,6 +38,11 @@ export default Ember.Route.extend({
       });
       review.save();
       this.transitionTo('admin');
+    },
+
+    destroyReview(review) {
+      review.destroyRecord();
+      this.transitionTo('admin');
     }
   }
 });

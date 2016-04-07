@@ -7,7 +7,7 @@
       {{#each model.items as |item|}}
         <div class="item-list">
           {{admin-item-tile item=item editItem="editItem"}}
-          <button class="btn btn-danger" {{action 'destroyItem' item}}>Delete</button>
+          <button class="btn btn-danger" {{action 'destroyItem' item}}>Delete Item</button>
         </div>
       {{/each}}
 
@@ -15,6 +15,7 @@
       {{#each model.reviews as |review|}}
         <div class="review-list">
           {{admin-review-tile review=review editReview="editReview"}}
+          <button {{action 'destroyReview' review}} class="btn btn-danger">Delete Review</button>
         </div>
       {{/each}}
 
