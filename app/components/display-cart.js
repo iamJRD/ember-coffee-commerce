@@ -15,6 +15,9 @@ export default Ember.Component.extend({
     removeItemFromCart(product) {
       this.get('shoppingCart').remove(product);
       this.get('shoppingCart').notifyPropertyChange('products');
+    },
+    deleteAllInCart(){
+      this.get('shoppingCart').set('products', []);
     }
   }
 });
