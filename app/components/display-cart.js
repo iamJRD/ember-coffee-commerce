@@ -9,7 +9,13 @@ export default Ember.Component.extend({
       total += price;
     }
     return total;
-  })
+  }),
+
+  actions: {
+    removeItemFromCart(product) {
+      this.get('shoppingCart').remove(product);
+    }
+  }
 });
 
 
