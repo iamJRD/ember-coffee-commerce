@@ -2,10 +2,21 @@ img {
   width: 200px;
 }
 
+h1 a {
+  font-family: 'Kanit', sans-serif;
+  size: 70px;
+  text-transform: uppercase;
+  font-style: italic;
+
+}
+
 h6 div {
   display: inline;
 }
 
+.jumbotron {
+
+}
 .item-list {
   padding-bottom: 30px;
 }

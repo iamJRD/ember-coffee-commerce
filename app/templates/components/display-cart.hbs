@@ -1,13 +1,12 @@
-{{#each shoppingCart.products as |product|}}
-  <h2>{{#link-to 'item' product.id}}{{product.name}}{{/link-to}}</h2>
-  <h3>{{product.brand}}</h3>
-  <h3>Price: ${{product.price}}</h3>
-
-  <button {{action 'removeItemFromCart' product}} class='btn btn-info'>Remove from Cart</button>
-{{/each}}
-
-Total: ${{cartTotal}}
-
 {{#if shoppingCart.products}}
 <button {{action 'deleteAllInCart'}} class='btn btn-danger'>Delete all items in cart</button>
 {{/if}}
+{{#each shoppingCart.products as |product|}}
+  <h4>{{#link-to 'item' product.id}}{{product.name}}{{/link-to}}</h4>
+  <h6>{{product.brand}}</h6>
+  <h5>Price: ${{product.price}}</h5>
+
+  <button {{action 'removeItemFromCart' product}} class='btn btn-info'>Remove from Cart</button>
+{{/each}}
+  <hr>
+<h2>Total: ${{cartTotal}}</h2>
