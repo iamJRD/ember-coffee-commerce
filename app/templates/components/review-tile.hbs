@@ -1,4 +1,9 @@
+<h4>Sort by</h4>
+<!-- {{radio-button value="rating" groupValue=sortBy}}Rating -->
+{{input type='checkbox' checked=reverseSort}} Sort by Rating (High-to-Low)
+{{#each sortedReviews as |review|}}
 <h3>{{review.username}}</h3>
 <h5>{{review.date}}</h5>
 <h6>{{review.rating}}/5</h6>
 <p>{{review.body}}</p>
+{{/each}}

@@ -10,10 +10,6 @@
     {{item-tile item=model}}
     <h3>Reviews for {{model.name}}:</h3>
     <hr>
-    <h4>Sort by</h4>
-    {{radio-button value="rating" groupValue=sortBy}}Rating
-    {{#each model.reviews as |review|}}
-      {{review-tile review=review}}
-    {{/each}}
+    {{review-tile reviews=model.reviews}}
   </div>
 </div>
