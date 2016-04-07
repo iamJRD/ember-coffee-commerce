@@ -7,4 +7,7 @@
 {{/each}}
 
 Total: ${{cartTotal}}
+
+{{#if shoppingCart.products}}
 <button {{action 'deleteAllInCart'}} class='btn btn-danger'>Delete all items in cart</button>
+{{/if}}
