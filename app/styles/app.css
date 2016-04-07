@@ -9,3 +9,11 @@ h6 div {
 .item-list {
   padding-bottom: 30px;
 }
+
+.reviews-tile {
+  padding-top: 80px;
+}
+
+.item-display h2 {
+  display: inline;
+}

@@ -1,8 +1,10 @@
-<h2>{{item.name}}</h2>
-<h3>{{item.brand}}</h3>
+<div class="item-display">
+  <h2>{{item.brand}} /</h2>  <h2><i>{{item.name}}</i></h2>
+</div>
 <h5>{{item.description}}</h5>
 <h5>Price: ${{item.price}}</h5>
-<h5>Quantity: {{item.purchaseQuantity}}</h5>
-
+<form>
+<h5>Quantity:   {{input value=purchaseQuantity placeholder=item.purchaseQuantity}}</h5>
 <button {{action 'addToCart' item}} class="btn btn-warning">Add to Cart</button>
+</form>
 {{averageRating}}

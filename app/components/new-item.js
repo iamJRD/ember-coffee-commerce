@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         description: this.get('description'),
         image: this.get('image'),
         purchaseQuantity: this.get('purchaseQuantity'),
-        price: this.get('price'),
+        price: parseInt(this.get('price')),
         inStock: this.get('inStock'),
       };
       this.sendAction('saveItem', params);

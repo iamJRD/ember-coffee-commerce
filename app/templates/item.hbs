@@ -8,8 +8,10 @@
 
   <div class="col-md-6">
     {{item-tile item=model}}
-    <h3>Reviews for {{model.name}}:</h3>
-    <hr>
-    {{review-tile reviews=model.reviews}}
+      <div class="reviews-tile">
+        <h3>Reviews for {{model.name}}:</h3>
+        <hr>
+        {{review-tile reviews=model.reviews}}
+      </div>
   </div>
 </div>
