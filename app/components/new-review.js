@@ -11,12 +11,13 @@ export default Ember.Component.extend({
     saveReview() {
       var params = {
         username: this.get('username'),
-        date: this.get('date'),
+        date: Date(),
         rating: this.get('rating'),
         body: this.get('body'),
         item: this.get('item')
       };
       this.sendAction('saveReview', params);
+      this.set('addReviewForm', false);
       this.set('username', '');
       this.set('date', '');
       this.set('rating', '');
