@@ -1,4 +1,12 @@
-{{#if addReviewForm}}
+{{#ember-remodal
+  openButton='Add a Review'
+  confirmButton='Add this Review'
+  title='Add a Review'
+  buttonClasses='btn'
+  openButtonClasses='btn-primary'
+  confirmButtonClasses='btn-success'
+  onClose=(action 'saveReview' item)
+}}
   <form>
     <div class="form-group">
       <label for="username">Username: </label>
@@ -14,9 +22,5 @@
       <label for="body">Review Body: </label>
       {{textarea rows="7" cols="40" type="text" value=body}}
     </div>
-
-    <button class="btn btn-success" {{action 'saveReview' item}}>Add this Review</button>
   </form>
-{{else}}
-  <button class="btn btn-info" {{action 'addReviewForm'}}>Add a Review</button>
-{{/if}}
+{{/ember-remodal}}
