@@ -1,7 +1,8 @@
-# Coffee-com
+# Coffee E-Commerce - Ember JavaScript
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### By: Jared Beckler | Epicodus | April 2016
+
+This project was designed to get us more familiar with Ember.js apps. This allows an "admin" to add/edit/delete products and a "customer" to add items to their cart.
 
 ## Prerequisites
 
@@ -15,39 +16,35 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/jaredbeckler/ember-coffee-commerce` this repository
 * change into the new directory
-* `npm install`
+* make sure node.js is installed then run the following:
+* `npm install bower -g`
 * `bower install`
 
 ## Running / Development
 
 * `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit the app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Known Bugs
 
-Make use of the many generators for code, try `ember help generate` for more details
+There are currently no known bugs.
 
-### Running Tests
+## Support and contact details
 
-* `ember test`
-* `ember test --server`
+If you have any issues, questions, ideas, or concerns contact me through GitHUb. If you would like to make a contribution to the code, feel free to do so and notify me by e-mail.
 
-### Building
+## Technologies Used
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+* Ember JavaScript
+* Bootstrap
+* GIT
+* NPM
+* Node
+* Bower
+* Firebase
 
-### Deploying
+### License
 
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Copyright &copy; 2016  |  Jared Beckler  |  Epicodus  |  Portland, OR
